@@ -1,0 +1,6 @@
+.rbnb-header {
+    @apply fixed w-full border-b border-gray-300 bg-white py-4;
+    &__wrapper {
+        @apply container mx-auto flex items-center;
+    }
+}

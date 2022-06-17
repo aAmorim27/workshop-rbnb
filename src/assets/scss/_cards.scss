@@ -1,0 +1,26 @@
+.home-card {
+    &__picture {
+        @apply rounded-lg overflow-hidden md:h-48;
+    }
+    &__informations {
+        @apply mt-2;
+    }
+    &__location {
+        @apply font-semibold;
+    }
+    &__rating {
+        @apply flex items-center float-right;
+        &__value {
+            @apply text-sm;
+        }
+        &__star {
+            @apply text-base;
+        }
+    }
+    &__host-info {
+        @apply text-gray-500;
+    }
+    &__pricing {
+        @apply font-semibold;
+    }
+}

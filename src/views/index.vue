@@ -2,7 +2,9 @@
   <home-search />
   <div
     class="grid gap-4 px-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 md:px-0"
-  ></div>
+  >
+    <!--Add home card here-->
+  </div>
 </template>
 
 <script setup lang="ts">

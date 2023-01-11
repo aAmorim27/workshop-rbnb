@@ -1,7 +1,16 @@
 <template>
   <app-header />
   <div class="container pt-20 mx-auto">
-    <router-view></router-view>
+    <router-view v-slot="{ Component }">
+      <template v-if="Component">
+        <Suspense>
+          <div>
+            <component :is="Component" />
+          </div>
+          <template #fallback> Loading... </template>
+        </Suspense>
+      </template>
+    </router-view>
   </div>
 </template>
 
